@@ -6,7 +6,6 @@ for (let i = document.getElementsByClassName('yuRUbf').length; i-- > 0;) {
 
 		let rescont = document.getElementsByClassName('IsZvec')[i]
 
-		// Request to StackOverflow's API to get the answers
 		fetch(`https://api.stackexchange.com/2.2/questions/${id}/answers?order=desc&sort=votes&site=stackoverflow&filter=!b6AubVkmmBt14D`).then(data => {
 			data = data.json()
 			console.log(data)
